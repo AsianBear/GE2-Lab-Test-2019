@@ -21,4 +21,12 @@ public class Bullet : MonoBehaviour
     {
         transform.Translate(0, 0, speed * Time.deltaTime);
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if (other.gameObject.tag == "Player")
+        {
+            other.gameObject.GetComponent<Base>().tiberium -= 0.5f;
+        }
+    }
 }
