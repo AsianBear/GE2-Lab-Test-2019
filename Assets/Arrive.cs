@@ -32,7 +32,7 @@ public class Arrive: SteeringBehaviour
 
         if(shoot)
         {
-            OnArrive();
+            //OnArrive(); // Supposed to shoot but have a huge bug
         }
     }
 
